@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess My Number!</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-outer">
+        <div class="flex-container1-inner">
+            <Button id="GenerateButton">Generate!</Button>
+            <p>(Between 1 and 2)</p>
+        </div>
+        <div class="flex-container2-inner">
+            <h1>Guess My Number!</h1>
+            <div class="magicBox" id="magicBox">
+                <h2 id="GuessNumber">?</h2>
+            </div>
+        </div>
+
+        <div class="flex-container3-inner">
+            <input type="text" id="CheckBox" value="" maxlength="1" min="1" max="1">
+            <button id="CheckButton">Check!</button>
+        </div>
+        <p>Start quessing...</p>
+        <div class="flex-container4-inner">
+            Score: <input type="number" name="Score" value="" id="Score" readonly>
+            Highscore: <input type="number" name="HighScore" value="" id="HighScore" readonly>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
